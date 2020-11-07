@@ -10,7 +10,7 @@
 
     </head>
     <body class="antialiased">
-        @include('partials.navbar')
+        @include('layouts.navegation')
         <div class="container">
             @yield('content');
         </div>

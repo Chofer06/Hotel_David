@@ -13,6 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Ruta /
 Route::get('/', function () {
-    return "Bienvenidos Al Hotel La Rivera";
+    return view('principal');
+});
+//Ruta Historia
+Route::get('hotel/historia', function () {
+    return view('hotel/historia');
+});
+//Ruta Mision-Vision
+Route::get('hotel/vision', function () {
+    return view('hotel/vision');
+});
+//Ruta Ubicacion
+Route::get('hotel/ubicacion', function () {
+    return view('hotel/ubicacion');
+});
+//Ruta Servicios/Habitaciones
+Route::get('servicios/habitaciones', function () {
+    return view('servicios/habitaciones');
+});
+//Ruta Servicios/Eventos
+Route::get('servicios/eventos/{id}', function ($id) {
+    return view('servicios/eventos',array('id'=>$id));
+});
+//Ruta Reservas
+Route::get('reservas', function () {
+    return view('reservas/reservas');
+});
+//Ruta Contactos
+Route::get('contactos', function () {
+    return view('contacto');
 });

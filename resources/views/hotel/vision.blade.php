@@ -1,4 +1,7 @@
 @extends('layouts.master')
 @section('content')
-	Hotel independiente que se caracteriza por brindar un servicio de alta calidad que permite a los clientes tener la mejor experiencia durante su estadía. Posicionado en el mercado como un hotel de excelente calidad y servicio. Ofreciendo el mejor servicio y atención a los huéspedes con un equipo cálido y amable. Ubicación acertada dentro de la ciudad de Santa Marta porque tiene fácil acceso a cualquier lugar.
+	<h1 align="center"><strong>MISION</strong></h1><br>
+	<h5 align="justify">Somos un grupo de personas que trabajan para satisfacer las necesidades de cada uno de sus clientes,con amabilidad, servicios originales, en un ambiente unico y autentico, a traves de la proteccion y conservacion de los medio ambiente, recursos naturales y socioculturales para un turismo sostenible, ademas de ser la segunda casa de nuestros huespedes. Esperamos hacerlo sentir comodo y conectado con el mundo mientras explora las vistas locales, se ocupa de un importante negocio o pasa el tiempo con quien ama.</h5><br><br>
+	<h1 align="center"><strong>VISION</strong></h1><br>
+	<h5 align="justify">Ser el hotel lider reconocido por nuestros huespedes en la Riviera y expandirnos en varios estados de Colombia, por la excelencia en el servicio y la ecperiencia inmemorable que se lleva cada turista al visitar el lugar, contando con escelentes instalaciones y comodidades durante la instancia.</h5>
 @stop

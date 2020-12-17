@@ -6,13 +6,13 @@
 
         <!--Carga Archivos css-->
         <link href="{{ url('/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-        <title>Hotel David</title>
+        <title>Hotel_David_Yolima</title>
 
     </head>
     <body class="antialiased">
         @include('layouts.navegation')
         <div class="container">
-            @yield('content');
+            @yield('content')
         </div>
 
         <!--Carga Archivos javascript-->

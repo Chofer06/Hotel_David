@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HotelController;
+use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\FacturacionController;
+use App\Http\Controllers\HabitacionesController;
+use App\Http\Controllers\ReservasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,34 +19,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Ruta /
-Route::get('/', function () {
-    return view('principal');
-});
+Route::get('/',[HotelController::class,'getIndex']);
+
 //Ruta Historia
-Route::get('hotel/historia', function () {
-    return view('hotel/historia');
-});
+Route::get('hotel/historia',[HotelController::class,'showHistoria']);
+
 //Ruta Mision-Vision
-Route::get('hotel/vision', function () {
-    return view('hotel/vision');
-});
+Route::get('hotel/mision-vision',[HotelController::class,'showMision']);
+
 //Ruta Ubicacion
-Route::get('hotel/ubicacion', function () {
-    return view('hotel/ubicacion');
-});
+Route::get('hotel/ubicacion',[HotelController::class,'showUbicacion']);
+
 //Ruta Servicios/Habitaciones
-Route::get('servicios/habitaciones', function () {
-    return view('servicios/habitaciones');
-});
-//Ruta Servicios/Eventos
+Route::get('servicios/habitaciones',[HabitacionesController::class,'showHabitaciones']);
+
+//Ruta Clientes/Visualizar
+Route::get('clientes/visualizar',[ClientesController::class,'showClientes']);
+
+//Ruta Facturacion
+Route::get('facturacion',[FacturacionController::class,'getFactura']);
+
+//Ruta Reservas
+Route::get('reservas',[ReservasController::class,'getReservas']);
+
+//Ruta Contactos
+Route::get('contactos',[HotelController::class,'showContactos']);
+
+
+
+/*Ruta Servicios/Eventos
 Route::get('servicios/eventos/{id}', function ($id) {
     return view('servicios/eventos',array('id'=>$id));
-});
-//Ruta Reservas
-Route::get('reservas', function () {
-    return view('reservas/reservas');
-});
-//Ruta Contactos
-Route::get('contactos', function () {
-    return view('contacto');
-});
+});*/

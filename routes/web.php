@@ -37,7 +37,7 @@ Route::get('servicios/habitaciones',[HabitacionesController::class,'showHabitaci
 Route::get('clientes/visualizar',[ClientesController::class,'showClientes']);
 
 //Ruta Facturacion
-Route::get('facturacion',[FacturacionController::class,'getFactura']);
+Route::get('facturacion/factura',[FacturacionController::class,'getFactura']);
 
 //Ruta Reservas
 Route::get('reservas',[ReservasController::class,'getReservas']);

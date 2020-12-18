@@ -10,15 +10,14 @@
 						de habitaciones en un hotel?</h5><br>
 	<div class="container">
 		<div class="row">
-			@foreach($habitaciones as $h)
+			@foreach($precio as $p)
 			<div class="col-md-3">
 		    	<div class="card" style="width: 15rem;">
-					<img src='{{url("imagenes/$h->foto")}}' class="card-img-top" alt="...">
+					<img src="{{url('imagenes/6.jpg')}}" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title" align="center"><strong>{{ $h->numero }}</strong></h5>
-						<h5 class="card-title" align="center"><strong>{{ $h->descripcion }}</strong></h5>
-						<h5 class="card-title" align="center"><strong>{{ $h->numCamas }}</strong></h5>
-						<h5 class="card-title" align="center"><strong>{{ $h->precio }}</strong></h5>
+						<h5 class="card-title" align="center"><strong>{{ $p->id }}</strong></h5>
+						<h5 class="card-title" align="center"><strong>{{ $p->tipo }}</strong></h5>
+						<h5 class="card-title" align="center"><strong>{{ $p->precio }}</strong></h5>
 					</div>
 		      		<button type="button" class="btn btn-success">ALQUILAR</button>
 		    	</div><br>

@@ -30,6 +30,9 @@ Route::get('hotel/mision-vision',[HotelController::class,'showMision']);
 //Ruta Ubicacion
 Route::get('hotel/ubicacion',[HotelController::class,'showUbicacion']);
 
+//Ruta Servicios/Precios
+Route::get('servicios/precios',[HabitacionesController::class,'showPrecios']);
+
 //Ruta Servicios/Habitaciones
 Route::get('servicios/habitaciones',[HabitacionesController::class,'showHabitaciones']);
 

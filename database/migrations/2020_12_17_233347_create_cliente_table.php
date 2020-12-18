@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFormapagoTable extends Migration
+class CreateClienteTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,14 @@ class CreateFormapagoTable extends Migration
      */
     public function up()
     {
-        Schema::create('formaPago', function (Blueprint $table) {
+        Schema::create('cliente', function (Blueprint $table) {
             $table->id();
+            $table->string('dni',10);
+            $table->char('nombre',50);
+            $table->string('genero',1);
+            $table->string('domicilio',50);
+            $table->string('telefono',10);
+            $table->string('foto',45);
             $table->timestamps();
         });
     }
@@ -26,6 +32,6 @@ class CreateFormapagoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('formaPago');
+        Schema::dropIfExists('cliente');
     }
 }
